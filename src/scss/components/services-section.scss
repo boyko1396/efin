@@ -1,0 +1,99 @@
+.services-section {
+  &__container {
+  }
+  &__title {
+  }
+  &__slider {
+    padding: 28rem 0;
+    position: relative;
+    z-index: 0;
+    @media (max-width: $lg) {
+      padding: 0;
+    }
+    &:before,
+    &:after {
+      @media (min-width: $lg-mf) {
+        background: $salmonColor;
+        width: 378rem;
+        content: '';
+        position: absolute;
+        top: 56rem;
+        bottom: 56rem;
+        border-radius: $radiusLg;
+        z-index: -1;
+      }
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+    .swiper-wrapper {
+      align-items: initial;
+    }
+    .swiper-slide {
+      height: initial;
+      transition: $transition;
+      transition-property: transform, opacity, visibility;
+      @media (min-width: $lg-mf) {
+        width: 435rem;
+        transform: scale(.85);
+        opacity: 0;
+        visibility: hidden;
+      }
+      @media (max-width: $lg) {
+        width: 300rem;
+        transform: scale(.92);
+        opacity: .6;
+      }
+      &-prev,
+      &-next {
+        @media (min-width: $lg-mf) {
+          transform: none;
+          visibility: visible;
+          opacity: 1;
+        }
+        &:before {
+          @media (min-width: $lg-mf) {
+            opacity: .85;
+          }
+        }
+      }
+      &-prev {
+        @media (min-width: $lg-mf) {
+          transform: translateX(30rem);
+        }
+      }
+      &-next {
+        @media (min-width: $lg-mf) {
+          transform: translateX(-30rem);
+        }
+      }
+      &-active {
+        opacity: 1;
+        @media (min-width: $lg-mf) {
+          transform: scale(1.08505747126);
+          opacity: 1;
+          visibility: visible;
+          z-index: 1;
+        }
+        @media (max-width: $lg) {
+          transform: none;
+        }
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+  .swiper-pagination {
+    margin-top: 28rem;
+    @media (max-width: $lg) {
+      margin-top: 16rem;
+    }
+  }
+}

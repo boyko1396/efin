@@ -1,0 +1,18 @@
+.header {
+  padding: 25rem 0;
+  @media (max-width: $sm) {
+    padding: 15rem 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 148rem;
+    flex: 0 0 148rem;
+    @media (max-width: $sm) {
+      max-width: 78rem;
+      flex-basis: 78rem;
+    }
+  }
+}

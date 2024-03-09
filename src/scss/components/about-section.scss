@@ -1,0 +1,32 @@
+.about-section {
+  padding: 48rem 0 45rem;
+  @media (max-width: $sm) {
+    padding: 24rem 0 40rem;
+  }
+  &__container {
+  }
+  &__inner {
+    @media (max-width: $sm) {
+      margin: 0 -16rem;
+    }
+  }
+  &__title {
+    margin: 0 0 32rem;
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__list {
+    margin-bottom: calc(var(--gap-) * 2);
+    &-col {
+      margin-bottom: calc(var(--gap) * 2);
+      @media (max-width: $lg) {
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

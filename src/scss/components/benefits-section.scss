@@ -1,0 +1,32 @@
+.benefits-section {
+  &__container {
+  }
+  &__inner {
+    @media (max-width: $sm) {
+      margin: 0 -16rem;
+    }
+  }
+  &__title {
+    margin: 0 0 40rem;
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+      font-size: 24rem;
+    }
+  }
+  &__list {
+    &-col {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      &:not(:last-child) {
+        @media (max-width: $sm) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}
