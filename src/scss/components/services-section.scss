@@ -71,7 +71,6 @@
         }
       }
       &-active {
-        opacity: 1;
         @media (min-width: $lg-mf) {
           transform: scale(1.08505747126);
           opacity: 1;
@@ -80,6 +79,7 @@
         }
         @media (max-width: $lg) {
           transform: none;
+          opacity: 1;
         }
         &:before {
           opacity: 1;

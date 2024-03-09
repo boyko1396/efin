@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       padding: 50rem 0 16rem;
       align-items: flex-end;
     }
@@ -16,14 +16,14 @@
   &__logo {
     max-width: 196rem;
     flex-basis: 196rem;
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       max-width: 120rem;
       flex-basis: 120rem;
     }
   }
   &__contacts {
     flex-shrink: 0;
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       padding-bottom: 2rem;
     }
     &-email {
@@ -31,7 +31,7 @@
       display: inline-block;
       vertical-align: top;
       transition: $transition;
-      @media (max-width: $sm) {
+      @media (max-width: $lg) {
         font-size: 24rem;
       }
       &:hover {
@@ -48,7 +48,7 @@
     line-height: 1.32;
     color: rgba($darkGreyColor, .7);
     border-top: 1px solid $lightGreyColor;
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       padding: 32rem 0 44rem;
     }
     &-row {
@@ -57,14 +57,14 @@
       &--copyright {
       }
       &--privacy {
-        @media (max-width: $sm) {
+        @media (max-width: $lg) {
           max-width: 100%;
           flex-basis: 100%;
           order: -2;
         }
       }
       &--iin {
-        @media (max-width: $sm) {
+        @media (max-width: $lg) {
           max-width: 100%;
           flex-basis: 100%;
           order: -1;
@@ -72,7 +72,7 @@
       }
       &--aic {
         text-align: right;
-        @media (max-width: $sm) {
+        @media (max-width: $lg) {
           max-width: 100%;
           flex-basis: 100%;
           display: flex;
@@ -87,7 +87,7 @@
     }
   }
   &__privacy {
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       margin: 0 0 14rem;
     }
     a {
@@ -101,7 +101,7 @@
     }
   }
   &__iin {
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       margin-bottom: 30rem;
       display: flex;
       flex-wrap: wrap;
@@ -111,14 +111,16 @@
       flex-wrap: wrap;
       &:not(:last-child) {
         margin-bottom: 1rem;
-        @media (max-width: $sm) {
+        @media (max-width: $lg) {
           max-width: 50%;
           flex-basis: 50%;
           flex-direction: column;
         }
       }
       &:last-child {
-        @media (max-width: $sm) {
+        @media (max-width: $lg) {
+          max-width: 100%;
+          flex-basis: 100%;
           margin: 0 0 14rem;
           order: -1;
         }
@@ -135,7 +137,7 @@
     align-items: center;
     line-height: 1;
     color: $fontColor;
-    @media (max-width: $sm) {
+    @media (max-width: $lg) {
       position: relative;
       top: -2rem;
     }
