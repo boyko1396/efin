@@ -120,9 +120,9 @@
     }
     &-item {
       &:not(:last-child) {
-        margin-right: -32rem;
+        margin-right: -16rem;
         @media (max-width: $sm) {
-          margin-right: -4rem;
+          margin-right: -12rem;
         }
       }
     }
