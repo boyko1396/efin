@@ -1,8 +1,11 @@
 .header {
-  padding: 25rem 0;
-  @media (max-width: $sm) {
-    padding: 15rem 0;
-  }
+  background: $eggshellColor;
+  width: 100%;
+  padding: 15rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 12;
   &__container {
     display: flex;
     align-items: center;

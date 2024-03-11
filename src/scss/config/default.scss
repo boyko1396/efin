@@ -4,6 +4,9 @@ html{-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size
 html {
   font-size: $siteResolution;
   scroll-behavior: smooth;
+  @media (min-width: $lg-mf) {
+    font-size: .0625vw;
+  }
 }
 
 html,
