@@ -8,13 +8,8 @@
  */
 
 // support webp, identify device
-import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager.js';
 import { ServicesSlider } from './modules/ServicesSlider.js';
-
-BaseHelpers.checkWebpSupport();
-BaseHelpers.addTouchClass();
-BaseHelpers.addLoadedClass();
 
 document.addEventListener('DOMContentLoaded', function() {
   // modal init
