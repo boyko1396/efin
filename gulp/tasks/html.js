@@ -32,9 +32,15 @@ const html = () => {
           value: '%DT%',
 
           append: {
-            key: '?=v',
+            key: '',
             cover: 0,
-            to: ['css', 'js'],
+            to: [
+              'css',
+              {
+                'type'  : 'js',
+                'files': ['js/app.min.js']
+              }
+            ],
           },
 
           output: {
