@@ -6,7 +6,7 @@
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240314150642">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240320134108">
   <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
@@ -100,7 +100,7 @@
                 <div class="u-box__inner">
                   <h2 class="benefits-section__title">Идентификация и выдача финансовых продуктов</h2>
                   <div class="row benefits-section__list">
-                    <div class="benefits-section__list-col row__col--4">
+                    <div class="row__col--4 benefits-section__list-col">
                       <article class="benefits-card benefits-section__list-card">
                         <div class="benefits-card__inner">
                           <picture class="benefits-card__picture">
@@ -112,7 +112,7 @@
                         </div>
                       </article>
                     </div>
-                    <div class="benefits-section__list-col row__col--4">
+                    <div class="row__col--4 benefits-section__list-col">
                       <article class="benefits-card benefits-section__list-card">
                         <div class="benefits-card__inner">
                           <picture class="benefits-card__picture">
@@ -124,7 +124,7 @@
                         </div>
                       </article>
                     </div>
-                    <div class="benefits-section__list-col row__col--4">
+                    <div class="row__col--4 benefits-section__list-col">
                       <article class="benefits-card benefits-section__list-card">
                         <div class="benefits-card__inner">
                           <picture class="benefits-card__picture">
@@ -630,24 +630,20 @@
     </div>
     <div class="footer__info">
       <div class="row footer__info-row">
-        <div class="footer__info-col row__col--2 d-lg-none footer__info-col--copyright">
+        <div class="row__col--3 footer__info-col d-lg-none footer__info-col--copyright">
           <div class="footer__copyright-list">
-            <p class="footer__copyright">© 2024 ООО «Ефин»</p>
-            <p class="footer__copyright">АО «ЕФР»</p>
+            <p class="footer__copyright">© 2024 Акционерное общество "Единые&nbsp;Финансовые Решения"</p>
           </div>
         </div>
         <div class="row__col--3 footer__info-col footer__info-col--privacy">
           <div class="footer__privacy">
             <a href="javascript:void(0)" data-modal="popup-privacy">Политика обработки персональных данных</a>
+            <br>
+            <a href="javascript:void(0)" data-modal="popup-info">Раскрытие информации</a>
           </div>
         </div>
-        <div class="footer__info-col footer__info-col--iin row__col--5">
+        <div class="footer__info-col footer__info-col--iin row__col--4">
           <div class="footer__iin">
-            <div class="footer__iin-item">
-              <p class="footer__iin-item-code">ИНН 9715308819</p>
-              <p class="footer__iin-item-code">КПП 770901001</p>
-              <p class="footer__iin-item-code">ОГРН 5177746204565</p>
-            </div>
             <div class="footer__iin-item">
               <p class="footer__iin-item-code">ИНН 9709079649</p>
               <p class="footer__iin-item-code">КПП 770901001</p>
@@ -662,7 +658,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__info-col row__col--2 footer__info-col--aic">
+        <div class="footer__info-col footer__info-col--aic row__col--2">
           <p class="footer__copyright d-lg-block">© 2024 ООО «Ефин»</p>
           <p class="footer__copyright d-lg-block">АО «ЕФР»</p>
           <a href="https://www.aic.ru/" target="_blank" rel="noopener noreferrer" class="footer__aic">
@@ -709,8 +705,40 @@
     </div>
   </div>
 </div>
+
+<div class="popup" data-popup="popup-info" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--size-md popup__content--theme-white">
+      <button class="btn-close btn-close--theme-white js-button-close popup__btn-close" type="button">
+        <svg class="u-icon btn-close__icon">
+          <use xlink:href="images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <p class="popup__title title-size-4">Раскрытие информации</p>
+        <div class="content popup__privacy">
+          <p>Предоставляя свои персональные данные Пользователь даёт согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в следующих целях:</p>
+          <ul>
+            <li>Осуществление клиентской поддержки</li>
+            <li>Получения Пользователем информации о маркетинговых событиях</li>
+            <li>Проведения аудита и прочих внутренних исследований с целью повышения качества предоставляемых услуг.</li>
+          </ul>
+          <p>Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность Пользователя/Покупателя такая как:</p>
+          <ul>
+            <li>Фамилия, Имя, Отчество</li>
+            <li>Дата рождения</li>
+            <li>Контактный телефон</li>
+            <li>Адрес электронной почты</li>
+            <li>Почтовый адрес</li>
+          </ul>
+          <p>Персональные данные Пользователей хранятся исключительно на электронных носителях и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка персональных данных необходима в связи с исполнением требований законодательства.<br>Компания обязуется не передавать полученные персональные данные третьим лицам, за исключением следующих случаев:<br>По запросам уполномоченных органов государственной власти РФ только по основаниям и в порядке, установленным законодательством РФ <br>Стратегическим партнёрам, которые работают с Компанией для предоставления продуктов и услуг, или тем из них, которые помогают Компании реализовывать продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный объём персональных данных, необходимый только для оказания требуемой услуги или проведения необходимой транзакции.<br>Компания оставляет за собой право вносить изменения в одностороннем порядке в настоящие правила, при условии, что изменения не противоречат действующему законодательству РФ. Изменения условий настоящих правил вступают в силу после их публикации на сайте.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
-    <script src="js/app.min.js?_v=20240314150642"></script>
+    <script src="js/app.min.js?_v=20240320134108"></script>
   </body>
 </html>
